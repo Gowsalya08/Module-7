@@ -15,9 +15,15 @@ To write a Python program to evaluate a **Taylor Series** using **recursion**, w
 6. **Stop**
 
 ## 💻 PROGRAM:
-
-ADD CODE HERE
+def series(x, n):
+ if n == 0:
+ return 1
+ return x**n / n + series(x, n-1)
+ x, n = 2, 3 # Example inputs
+ print(series(x, n))
 
 ## OUTPUT
+<img width="351" height="158" alt="image" src="https://github.com/user-attachments/assets/c2b92dcb-8bdf-4a61-b92f-23c9f0551ea1" />
 
 ## RESULT
+Thus, the program has been successfully executed.
