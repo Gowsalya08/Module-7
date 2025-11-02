@@ -17,8 +17,21 @@ To write a Python program to demonstrate **Head Recursion** by finding and print
 
 ## 💻 PROGRAM:
 
-ADD CODE HERE
+def sum_of_digits(num):
+ return sum(int(digit) for digit in str(num))
+ def fun(n):
+ if n <= 0:
+ return
+ fun(n - 1)
+ print(f"Current value: {n}, Sum of digits: {sum_of_digits(n)}")
+ num = int(input("Enter a positive integer: "))
+ if num % 2 != 0:
+ num += 1
+ print(f"Adjusted input (even number): {num}\nSequence (head recursion):")
+ fun(num)
 
 ## OUTPUT
+<img width="722" height="192" alt="image" src="https://github.com/user-attachments/assets/78d96a62-e6ba-4424-ac23-baf63a52074d" />
 
 ## RESULT
+Thus, the program has been successfully executed.
